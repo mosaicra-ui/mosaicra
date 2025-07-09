@@ -1,9 +1,10 @@
 Project:
-  Name: "Aurora Landing1"
-  Description: "A sleek and responsive landing page template designed with modern layout principles and animated interactions."
-  Visibility: "public"  # options: public | private
-  Category: "UI Component"
-  Subcategory: "Landing Page"
+  Name: Aurora Landing
+  Description: A sleek and responsive landing page template designed with modern
+    layout principles and animated interactions.
+  Visibility: public
+  Category: UI Component
+  Subcategory: Landing Page
   Tags:
     - landing
     - responsive
@@ -11,36 +12,47 @@ Project:
     - hero
     - modern
     - ui
-
   View:
-    Mode: "dynamic"  # options: dynamic | image
-
+    Mode: dynamic
   Owner:
-    Username: "herogautam"
-    ProfileURL: "https://github.com/herogautam"
-
+    Username: herogautam
+    ProfileURL: https://github.com/herogautam
   Metadata:
-    CreatedAt: "2025-07-08T02:45:00+05:30"
-    LastUpdated: "2025-07-08T02:45:00+05:30"
-    Version: "1.0.0"
-
+    CreatedAt: 2025-07-08T02:45:00+05:30
+    LastUpdated: 2025-07-08T02:45:00+05:30
+    Version: 1.0.0
   Features:
     - ResponsiveLayout
     - AnimatedSections
     - ScrollAware
     - CleanTypography
-
   Dependencies:
     CSS:
-      - "tailwindcss"
+      - tailwindcss
     JS:
-      - "vanilla"
-
+      - vanilla
   Licensing:
-    Type: "MIT"
-    Link: "https://opensource.org/licenses/MIT"
-
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
   Community:
     AllowFork: true
     AllowComment: true
     AllowRemix: true
+Owner:
+  Username: unknown
+  ProfileURL: "#"
+Metadata:
+  CreatedAt: 2025-07-09T18:32:19.631Z
+  LastUpdated: 2025-07-09T18:32:31.770Z
+  Version: 1.0.0
+Features: []
+Dependencies:
+  CSS: []
+  JS: []
+Licensing:
+  Type: MIT
+  Link: "#"
+Community:
+  AllowFork: true
+  AllowComment: true
+  AllowRemix: true
