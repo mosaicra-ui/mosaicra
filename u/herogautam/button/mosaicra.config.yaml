@@ -691,13 +691,13 @@
 "690": o
 "691": =
 Project:
-  Name: Cyan Button
-  Description: A project preview.
+  Name: Cyan Blue Button
+  Description: A project preview. of Blue Button
   Visibility: public
   Category: Web
-  Subcategory: Button
+  Subcategory: General
   Tags:
-    - html
+    - css
   View:
     Mode: dynamic
 Owner:
@@ -705,7 +705,7 @@ Owner:
   ProfileURL: "#"
 Metadata:
   CreatedAt: 2025-07-10T07:30:26.923Z
-  LastUpdated: 2025-07-10T07:31:07.703Z
+  LastUpdated: 2025-07-10T07:32:32.438Z
   Version: 1.0.0
 Features: []
 Dependencies:
