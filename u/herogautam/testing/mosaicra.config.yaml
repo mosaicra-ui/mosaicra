@@ -1,0 +1,27 @@
+Project:
+  Name: testing
+  Description: test
+  Visibility: public
+  Category: Web Development
+  Subcategory: Frontend
+  Tags: []
+  View:
+    Mode: dynamic
+Owner:
+  Username: herogautam
+  ProfileURL: https://github.com/herogautam
+Metadata:
+  CreatedAt: 2025-07-10T12:05:19.248Z
+  LastUpdated: 2025-07-10T12:05:19.249Z
+  Version: 1.0.0
+Features: []
+Dependencies:
+  CSS: []
+  JS: []
+Licensing:
+  Type: MIT
+  Link: https://opensource.org/licenses/MIT
+Community:
+  AllowFork: true
+  AllowComment: true
+  AllowRemix: true
