@@ -3,23 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tailwind CSS Card</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Centered Button</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .button {
+      padding: 16px 32px;
+      font-size: 18px;
+      border: 2px solid #00cccc;
+      background-color: aqua;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #00dddd;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-
-  <!-- Card Component -->
-  <div class="max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-    <img class="w-full h-48 object-cover" src="https://source.unsplash.com/random/800x600" alt="Card image">
-    <div class="p-6">
-      <h2 class="text-xl font-semibold text-gray-800 mb-2">Card Title</h2>
-      <p class="text-gray-600 text-sm mb-4">
-        This is a short description inside the card. It can be used for blogs, product info, or profiles.
-      </p>
-      <a href="#" class="inline-block text-indigo-600 hover:text-indigo-800 font-medium text-sm">Learn more</a>
-    </div>
-  </div>
-
+<body>
+  <main>
+    <button class="button">Click Button</button>
+  </main>
 </body>
 </html>
