@@ -1,5 +1,5 @@
 Project:
-  Name: Aurora Landing1
+  Name: Aurora Landing
   Description: A sleek and responsive landing page template designed with modern layout principles and animated interactions.
   Visibility: public
   Category: UI Component
@@ -42,7 +42,7 @@ Owner:
   ProfileURL: "#"
 Metadata:
   CreatedAt: 2025-07-09T18:32:19.631Z
-  LastUpdated: 2025-07-10T07:50:39.913Z
+  LastUpdated: 2025-07-12T18:39:20.279Z
   Version: 1.0.0
 Features: []
 Dependencies:
