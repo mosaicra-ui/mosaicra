@@ -1,5 +1,5 @@
 Project:
-  Name: beach-view-parallax
+  Name: Beach View Parallax
   Description: A simple parallax effect demo using HTML and CSS. The background image (beach-view-background.jpg) scrolls
     at a slower rate than the foreground content, creating depth.
   Visibility: public
@@ -15,7 +15,7 @@ Owner:
   ProfileURL: https://github.com/mosaicra-bot
 Metadata:
   CreatedAt: 2025-07-23T18:57:01.533Z
-  LastUpdated: 2025-07-23T18:57:01.534Z
+  LastUpdated: 2025-07-23T19:27:27.977Z
   Version: 1.0.0
 Features: []
 Dependencies:
