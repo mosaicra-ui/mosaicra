@@ -1,0 +1,30 @@
+Project:
+  Name: beach-view-parallax
+  Description: A simple parallax effect demo using HTML and CSS. The background image (beach-view-background.jpg) scrolls
+    at a slower rate than the foreground content, creating depth.
+  Visibility: public
+  Category: Web Development
+  Subcategory: Frontend
+  Tags:
+    - parallax
+    - parallax-effect
+  View:
+    Mode: dynamic
+Owner:
+  Username: mosaicra-bot
+  ProfileURL: https://github.com/mosaicra-bot
+Metadata:
+  CreatedAt: 2025-07-23T18:57:01.533Z
+  LastUpdated: 2025-07-23T18:57:01.534Z
+  Version: 1.0.0
+Features: []
+Dependencies:
+  CSS: []
+  JS: []
+Licensing:
+  Type: MIT
+  Link: https://opensource.org/licenses/MIT
+Community:
+  AllowFork: true
+  AllowComment: true
+  AllowRemix: true
