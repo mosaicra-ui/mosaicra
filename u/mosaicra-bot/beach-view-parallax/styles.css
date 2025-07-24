@@ -50,7 +50,7 @@ header::before {
   right: 0;
   bottom: 0;
   display: block;
-  background: url(beach_view1.jpg);
+  background: url(beach_view6.jpg);
   background-size: cover;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
