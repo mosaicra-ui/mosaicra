@@ -1,0 +1,27 @@
+Project:
+  Name: futuristic-button
+  Description: Cyan button
+  Visibility: public
+  Category: Web Development
+  Subcategory: Frontend
+  Tags: []
+  View:
+    Mode: dynamic
+Owner:
+  Username: mosaicra-creator
+  ProfileURL: https://github.com/mosaicra-creator
+Metadata:
+  CreatedAt: 2025-07-25T17:12:04.313Z
+  LastUpdated: 2025-07-25T17:12:04.313Z
+  Version: 1.0.0
+Features: []
+Dependencies:
+  CSS: []
+  JS: []
+Licensing:
+  Type: MIT
+  Link: https://opensource.org/licenses/MIT
+Community:
+  AllowFork: true
+  AllowComment: true
+  AllowRemix: true
