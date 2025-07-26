@@ -1,0 +1,28 @@
+Project:
+  Id: 928a6563-34d4-4700-b206-849304db66f8
+  Name: "my project "
+  Slug: my-project
+  Description: ""
+  Visibility: public
+  Category: button
+  Tags: []
+  ViewMode: Dynamic
+  Interface: Web
+  Language: HTML
+  Framework: None
+  Styling:
+    Type: CSS
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowComment: true
+Owner:
+  Username: gautamankoji
+  ProfileUrl: https://github.com/gautamankoji
+Metadata:
+  CreatedAt: 2025-07-26T06:46:30.371Z
+  UpdatedAt: 2025-07-26T06:46:30.371Z
+  Version: 1.0.0
