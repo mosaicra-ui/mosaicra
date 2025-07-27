@@ -1,0 +1,29 @@
+Project:
+  Id: 852b99c6-5301-4fd4-8eee-8474e80c8fd6
+  Name: Remix of Remix of Remix of testing1
+  Slug: remix-of-remix-of-remix-of-testing1
+  Description: test
+  Visibility: public
+  Category: web development
+  Tags: []
+  ViewMode: Dynamic
+  Interface: Web
+  Language: HTML
+  Framework: None
+  Styling:
+    Type: CSS
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowComment: true
+  RemixOf: e3d4f2a3-2d47-4101-95bf-e4edf60cca7c
+Owner:
+  Username: herogautam
+  ProfileUrl: https://github.com/herogautam
+Metadata:
+  CreatedAt: 2025-07-27T12:42:34.582Z
+  UpdatedAt: 2025-07-27T12:42:34.582Z
+  Version: 1.0.0
