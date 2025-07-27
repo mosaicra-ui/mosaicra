@@ -1,0 +1,35 @@
+Project:
+  Id: 86f55ffc-6a9c-4961-8ebc-e21b37bd93da
+  Name: Remix of Aurora Landing
+  Slug: remix-of-aurora-landing
+  Description: A sleek and responsive landing page template designed with modern layout principles and animated interactions.
+  Visibility: public
+  Category: ui component
+  Tags:
+    - landing
+    - responsive
+    - animated
+    - hero
+    - modern
+    - ui
+  ViewMode: Dynamic
+  Interface: Web
+  Language: HTML
+  Framework: None
+  Styling:
+    Type: CSS
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowComment: true
+  RemixOf: herogautam-landing-page-1753627764435
+Owner:
+  Username: gautamankoji
+  ProfileUrl: https://github.com/gautamankoji
+Metadata:
+  CreatedAt: 2025-07-27T14:49:28.729Z
+  UpdatedAt: 2025-07-27T14:49:28.729Z
+  Version: 1.0.0
