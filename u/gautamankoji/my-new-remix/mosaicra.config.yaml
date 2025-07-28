@@ -1,0 +1,35 @@
+Project:
+  Id: 747a8849-a8eb-4e30-a5a8-93b27758f228
+  Name: my-new-remix
+  Slug: my-new-remix
+  Description: A sleek and responsive landing page template designed with modern layout principles and animated interactions.
+  Visibility: public
+  Category: ui component
+  Tags:
+    - landing
+    - responsive
+    - animated
+    - hero
+    - modern
+    - ui
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowComment: true
+  RemixOf: herogautam-landing-page-1753705030450
+Owner:
+  Username: gautamankoji
+  ProfileUrl: https://github.com/gautamankoji
+Metadata:
+  CreatedAt: 2025-07-28T12:17:32.722Z
+  UpdatedAt: 2025-07-28T12:17:32.722Z
+  Version: 1.0.0
