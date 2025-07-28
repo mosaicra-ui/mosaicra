@@ -1,0 +1,35 @@
+Project:
+  Id: 491d8cca-d733-4772-a104-ed3439a37607
+  Name: Aurora Landing by gautam
+  Slug: aurora-landing-by-gautam
+  Description: A sleek and responsive landing page template designed with modern layout principles and animated interactions.
+  Visibility: public
+  Category: ui component
+  Tags:
+    - landing
+    - responsive
+    - animated
+    - hero
+    - modern
+    - ui
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowComment: true
+  RemixOf: herogautam-landing-page-1753704048550
+Owner:
+  Username: gautamankoji
+  ProfileUrl: https://github.com/gautamankoji
+Metadata:
+  CreatedAt: 2025-07-28T12:13:02.696Z
+  UpdatedAt: 2025-07-28T12:13:02.696Z
+  Version: 1.0.0
