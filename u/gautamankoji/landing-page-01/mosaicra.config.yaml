@@ -1,0 +1,35 @@
+Project:
+  Id: 72088a62-92ae-4aed-8acf-6e3b280ecf9c
+  Name: landing-page-01
+  Slug: landing-page-01
+  Description: A sleek and responsive landing page template designed with modern layout principles and animated interactions.
+  Visibility: public
+  Category: ui component
+  Tags:
+    - landing
+    - responsive
+    - animated
+    - hero
+    - modern
+    - ui
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowComment: true
+  RemixOf: herogautam-landing-page-1753897946988
+Owner:
+  Username: gautamankoji
+  ProfileUrl: https://github.com/gautamankoji
+Metadata:
+  CreatedAt: 2025-07-30T18:32:19.208Z
+  UpdatedAt: 2025-07-30T18:32:19.208Z
+  Version: 1.0.0
