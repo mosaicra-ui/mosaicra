@@ -1,27 +1,29 @@
 Project:
-  Name: Blue Button
+  Id: cf80b276-ab8d-4990-ba55-b38b9a08094d
+  Name: Remix of Blue Button
+  Slug: remix-of-blue-button
   Description: A project preview.
   Visibility: public
-  Category: Web
-  Subcategory: General
+  Category: web
   Tags: []
-  View:
-    Mode: dynamic
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowComment: true
+  RemixOf: herogautam-button-1754195185266
 Owner:
-  Username: herogautam
-  ProfileURL: "#"
+  Username: gautamankoji
+  ProfileUrl: https://github.com/gautamankoji
 Metadata:
-  CreatedAt: 2025-07-10T07:45:43.968Z
-  LastUpdated: 2025-07-10T07:46:21.652Z
+  CreatedAt: 2025-08-03T04:27:04.011Z
+  UpdatedAt: 2025-08-03T04:27:04.011Z
   Version: 1.0.0
-Features: []
-Dependencies:
-  CSS: []
-  JS: []
-Licensing:
-  Type: MIT
-  Link: "#"
-Community:
-  AllowFork: true
-  AllowComment: true
-  AllowRemix: true
