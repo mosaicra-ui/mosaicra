@@ -1,0 +1,30 @@
+Project:
+  Id: 0f58b2c2-ee14-4c1d-b90f-667a82189f26
+  Name: Remix of test-pro-4
+  Slug: remix-of-test-pro-4
+  Description: ""
+  Visibility: public
+  Category: button
+  Tags: []
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowDiscussions: true
+  RemixOf: 80ba93e6-7c12-4dd8-bef5-8373e15e6c8e
+Owner:
+  Username: mosaicra-creator
+  Name: null
+  avatarUrl: https://avatars.githubusercontent.com/u/220522994?v=4
+Metadata:
+  CreatedAt: 2025-08-04T11:27:00.526Z
+  UpdatedAt: 2025-08-04T11:27:00.526Z
+  Version: 1.0.0
