@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -21,13 +23,24 @@ jobs:
       - name: Install dependencies
         run: pip install requests pyyaml
 
-      - name: Parse updated config and update Supabase
+      - name: Check commit and extract file if applicable
+        id: check_commit
         run: |
-          FILE=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep 'u/.*/.*/mosaicra.config.yaml$' || true)
-          if [ -z "$FILE" ]; then
-            echo "No mosaicra.config.yaml changed in this commit."
-            exit 0
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          echo "Commit message: $COMMIT_MSG"
+          if echo "$COMMIT_MSG" | grep -q "Create Project Metadata"; then
+            FILE=$(git diff-tree --no-commit-id --name-only -r ${{ github.sha }} | grep 'u/.*/.*/mosaicra.config.yaml$' || true)
+            echo "Detected file: $FILE"
+            echo "file_path=$FILE" >> $GITHUB_OUTPUT
+          else
+            echo "No matching commit message. Skipping."
+            echo "file_path=" >> $GITHUB_OUTPUT
           fi
+
+      - name: Parse config and update Supabase
+        if: steps.check_commit.outputs.file_path != ''
+        run: |
+          FILE=${{ steps.check_commit.outputs.file_path }}
           cat << EOF > update_index.py
           import os, yaml, requests
           from datetime import datetime, timezone
