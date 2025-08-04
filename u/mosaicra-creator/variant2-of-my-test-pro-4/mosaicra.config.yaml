@@ -1,0 +1,30 @@
+Project:
+  Id: 2b68b759-23ba-4676-ae86-2ce44be382b5
+  Name: Variant2 of my-test-pro-4
+  Slug: variant2-of-my-test-pro-4
+  Description: ""
+  Visibility: public
+  Category: button
+  Tags: []
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowDiscussions: true
+  VariantOf: 1d9a46fa-dd93-4980-8897-78764ac3acd8
+Owner:
+  Username: mosaicra-creator
+  Name: null
+  avatarUrl: https://avatars.githubusercontent.com/u/220522994?v=4
+Metadata:
+  CreatedAt: 2025-08-04T15:01:22.882Z
+  UpdatedAt: 2025-08-04T15:01:22.882Z
+  Version: 1.0.0
