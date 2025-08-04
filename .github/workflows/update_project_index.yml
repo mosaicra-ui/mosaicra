@@ -23,6 +23,7 @@ jobs:
 
       - name: Parse updated config and update Supabase
         run: |
+          cat << 'EOF' > update_index.py
           import os, yaml, requests, glob
           from pathlib import Path
           from datetime import datetime
@@ -50,16 +51,19 @@ jobs:
               username = parts[1]
               project_name = parts[2]
 
+              project = config.get("Project", {})
+              metadata = config.get("Metadata", {})
+
               payload = {
-                  "project_id": config.get("projectId"),
-                  "name": config.get("name", project_name),
-                  "slug": config.get("slug", project_name.lower().replace(' ', '-')),
-                  "description": config.get("description"),
-                  "category": config.get("category"),
-                  "interface": config.get("interface", "web"),
-                  "visibility": config.get("visibility", "public"),
-                  "version": config.get("version"),
-                  "tags": config.get("tags", []),
+                  "project_id": project.get("Id"),
+                  "name": project.get("Name", project_name),
+                  "slug": project.get("Slug", project_name.lower().replace(' ', '-')),
+                  "description": project.get("Description"),
+                  "category": project.get("Category"),
+                  "interface": project.get("Interface", "web"),
+                  "visibility": project.get("Visibility", "public"),
+                  "version": metadata.get("Version"),
+                  "tags": project.get("Tags", []),
                   "owner_username": username,
                   "updated_at": iso_now()
               }
@@ -68,12 +72,12 @@ jobs:
 
               res = requests.get(url, headers=headers)
               if res.ok and res.json():
-                  # Update
                   requests.patch(url, headers=headers, data=json.dumps(payload))
               else:
-                  # Insert
                   payload["created_at"] = iso_now()
                   requests.post(f"{SUPABASE_URL}/rest/v1/project_index", headers=headers, data=json.dumps(payload))
+          EOF
+          python update_index.py
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE: ${{ secrets.SUPABASE_SERVICE_ROLE }}
