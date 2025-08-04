@@ -26,14 +26,17 @@ jobs:
           cat << 'EOF' > update_index.py
           import os, yaml, requests, glob
           from pathlib import Path
-          from datetime import datetime
+          from datetime import datetime, timezone
           import json
 
-          SUPABASE_URL = os.environ['SUPABASE_URL']
-          SUPABASE_KEY = os.environ['SUPABASE_SERVICE_ROLE']
+          SUPABASE_URL = os.environ.get('SUPABASE_URL')
+          SUPABASE_KEY = os.environ.get('SUPABASE_SERVICE_ROLE')
+
+          if not SUPABASE_URL or not SUPABASE_KEY:
+              raise ValueError("SUPABASE_URL or SUPABASE_SERVICE_ROLE is not set.")
 
           def iso_now():
-              return datetime.utcnow().isoformat() + 'Z'
+              return datetime.now(timezone.utc).isoformat()
 
           headers = {
               "apikey": SUPABASE_KEY,
@@ -67,6 +70,10 @@ jobs:
                   "owner_username": username,
                   "updated_at": iso_now()
               }
+
+              if not payload["project_id"]:
+                  print(f"Skipping {path}: missing project_id")
+                  continue
 
               url = f"{SUPABASE_URL}/rest/v1/project_index?project_id=eq.{payload['project_id']}"
 
