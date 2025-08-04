@@ -1,0 +1,29 @@
+Project:
+  Id: d84ccc01-33aa-4fa7-9eeb-6b8332120fe2
+  Name: test-pro-2
+  Slug: test-pro-2
+  Description: ""
+  Visibility: public
+  Category: button
+  Tags: []
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowDiscussions: true
+Owner:
+  Username: gautamankoji
+  Name: Gautam Ankoji
+  avatarUrl: https://avatars.githubusercontent.com/u/120157430?v=4
+Metadata:
+  CreatedAt: 2025-08-04T10:00:42.248Z
+  UpdatedAt: 2025-08-04T10:00:42.248Z
+  Version: 1.0.0
