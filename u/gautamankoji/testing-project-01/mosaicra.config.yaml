@@ -1,0 +1,29 @@
+Project:
+  Id: 275c29cc-f05c-4fcc-aa4f-82f65888a8a6
+  Name: testing-project-01
+  Slug: testing-project-01
+  Description: ""
+  Visibility: public
+  Category: button
+  Tags: []
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowDiscussions: true
+Owner:
+  Username: gautamankoji
+  Name: Gautam Ankoji
+  avatarUrl: https://avatars.githubusercontent.com/u/120157430?v=4
+Metadata:
+  CreatedAt: 2025-08-04T09:50:08.346Z
+  UpdatedAt: 2025-08-04T09:50:08.346Z
+  Version: 1.0.0
