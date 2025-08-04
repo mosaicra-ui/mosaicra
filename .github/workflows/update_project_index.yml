@@ -23,20 +23,21 @@ jobs:
 
       - name: Parse updated config and update Supabase
         run: |
-          cat << 'EOF' > update_index.py
-          import os, yaml, requests, glob
-          from pathlib import Path
+          FILE=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep 'u/.*/.*/mosaicra.config.yaml$' || true)
+          if [ -z "$FILE" ]; then
+            echo "No mosaicra.config.yaml changed in this commit."
+            exit 0
+          fi
+          cat << EOF > update_index.py
+          import os, yaml, requests
           from datetime import datetime, timezone
+          from pathlib import Path
           import json
 
-          SUPABASE_URL = os.environ.get('SUPABASE_URL')
-          SUPABASE_KEY = os.environ.get('SUPABASE_SERVICE_ROLE')
+          path = "${FILE}"
 
-          if not SUPABASE_URL or not SUPABASE_KEY:
-              raise ValueError("SUPABASE_URL or SUPABASE_SERVICE_ROLE is not set.")
-
-          def iso_now():
-              return datetime.now(timezone.utc).isoformat()
+          SUPABASE_URL = os.environ["SUPABASE_URL"]
+          SUPABASE_KEY = os.environ["SUPABASE_SERVICE_ROLE"]
 
           headers = {
               "apikey": SUPABASE_KEY,
@@ -44,45 +45,48 @@ jobs:
               "Content-Type": "application/json"
           }
 
-          config_paths = glob.glob("u/*/*/mosaicra.config.yaml")
+          def iso_now():
+              return datetime.now(timezone.utc).isoformat()
 
-          for path in config_paths:
+          try:
               with open(path) as f:
                   config = yaml.safe_load(f)
+          except Exception as e:
+              print(f"Error reading {path}: {e}")
+              exit(1)
 
-              parts = Path(path).parts
-              username = parts[1]
-              project_name = parts[2]
+          parts = Path(path).parts
+          username, project_name = parts[1], parts[2]
 
-              project = config.get("Project", {})
-              metadata = config.get("Metadata", {})
+          project = config.get("Project", {})
+          metadata = config.get("Metadata", {})
 
-              payload = {
-                  "project_id": project.get("Id"),
-                  "name": project.get("Name", project_name),
-                  "slug": project.get("Slug", project_name.lower().replace(' ', '-')),
-                  "description": project.get("Description"),
-                  "category": project.get("Category"),
-                  "interface": project.get("Interface", "web"),
-                  "visibility": project.get("Visibility", "public"),
-                  "version": metadata.get("Version"),
-                  "tags": project.get("Tags", []),
-                  "owner_username": username,
-                  "updated_at": iso_now()
-              }
+          payload = {
+              "project_id": project.get("Id"),
+              "name": project.get("Name", project_name),
+              "slug": project.get("Slug", project_name.lower().replace(' ', '-')),
+              "description": project.get("Description"),
+              "category": project.get("Category"),
+              "interface": project.get("Interface", "web"),
+              "visibility": project.get("Visibility", "public"),
+              "version": metadata.get("Version"),
+              "tags": project.get("Tags", []),
+              "owner_username": username,
+              "updated_at": iso_now()
+          }
 
-              if not payload["project_id"]:
-                  print(f"Skipping {path}: missing project_id")
-                  continue
+          if not payload["project_id"]:
+              print(f"Skipping {path}: missing project_id")
+              exit(0)
 
-              url = f"{SUPABASE_URL}/rest/v1/project_index?project_id=eq.{payload['project_id']}"
+          url = f"{SUPABASE_URL}/rest/v1/project_index?project_id=eq.{payload['project_id']}"
 
-              res = requests.get(url, headers=headers)
-              if res.ok and res.json():
-                  requests.patch(url, headers=headers, data=json.dumps(payload))
-              else:
-                  payload["created_at"] = iso_now()
-                  requests.post(f"{SUPABASE_URL}/rest/v1/project_index", headers=headers, data=json.dumps(payload))
+          res = requests.get(url, headers=headers)
+          if res.ok and res.json():
+              requests.patch(url, headers=headers, json=payload)
+          else:
+              payload["created_at"] = iso_now()
+              requests.post(f"{SUPABASE_URL}/rest/v1/project_index", headers=headers, json=payload)
           EOF
           python update_index.py
         env:
