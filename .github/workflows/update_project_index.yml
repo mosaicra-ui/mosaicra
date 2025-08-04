@@ -45,7 +45,6 @@ jobs:
           import os, yaml, requests
           from datetime import datetime, timezone
           from pathlib import Path
-          import json
 
           path = "${FILE}"
 
@@ -85,7 +84,9 @@ jobs:
               "version": metadata.get("Version"),
               "tags": project.get("Tags", []),
               "owner_username": username,
-              "updated_at": iso_now()
+              "updated_at": iso_now(),
+              "remix_of": project.get("RemixOf"),
+              "variant_of": project.get("VariantOf")
           }
 
           if not payload["project_id"]:
