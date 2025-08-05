@@ -1,0 +1,29 @@
+Project:
+  Id: 28bcab27-6443-445b-ab6d-38101f2e122a
+  Name: new-button
+  Slug: new-button
+  Description: ""
+  Visibility: public
+  Category: button
+  Tags: []
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowDiscussions: true
+Owner:
+  Username: gautamankoji
+  Name: Gautam Ankoji
+  avatarUrl: https://avatars.githubusercontent.com/u/120157430?v=4
+Metadata:
+  CreatedAt: 2025-08-05T07:27:35.706Z
+  UpdatedAt: 2025-08-05T07:27:35.706Z
+  Version: 1.0.0
