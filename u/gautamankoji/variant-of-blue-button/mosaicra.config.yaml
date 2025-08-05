@@ -1,0 +1,30 @@
+Project:
+  Id: e6d9095c-e36f-40c1-9d63-47f26ad96fa7
+  Name: Variant of Blue Button
+  Slug: variant-of-blue-button
+  Description: A project preview.
+  Visibility: public
+  Category: web
+  Tags: []
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowDiscussions: true
+  VariantOfId: gautamankoji-button-1754378672680
+Owner:
+  Username: gautamankoji
+  Name: Gautam Ankoji
+  avatarUrl: https://avatars.githubusercontent.com/u/120157430?v=4
+Metadata:
+  CreatedAt: 2025-08-05T07:24:51.592Z
+  UpdatedAt: 2025-08-05T07:24:51.592Z
+  Version: 1.0.0
