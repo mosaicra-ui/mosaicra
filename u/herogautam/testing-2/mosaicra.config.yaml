@@ -1,0 +1,30 @@
+Project:
+  Id: 67b2a6d2-869d-47c0-844f-bda2316442f8
+  Name: testing-2
+  Slug: testing-2
+  Description: ""
+  Visibility: public
+  Category: button
+  Tags: []
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowDiscussions: true
+Owner:
+  Username: herogautam
+  UserId: 3de3e775-7cf8-4911-9359-e8debf12e3c9
+  Name: Hero Gautam
+  avatarUrl: https://avatars.githubusercontent.com/u/104679794?v=4
+Metadata:
+  CreatedAt: 2025-08-06T18:54:04.030Z
+  UpdatedAt: 2025-08-06T18:54:04.030Z
+  Version: 1.0.0
