@@ -72,6 +72,7 @@ jobs:
 
           project = config.get("Project", {})
           metadata = config.get("Metadata", {})
+          owner = config.get("Owner", {})
 
           payload = {
               "project_id": project.get("Id"),
@@ -84,6 +85,7 @@ jobs:
               "version": metadata.get("Version"),
               "tags": project.get("Tags", []),
               "owner_username": username,
+              "user_id": owner.get("UserId"),
               "updated_at": iso_now(),
               "remix_of_id": project.get("RemixOfId"),
               "variant_of_id": project.get("VariantOfId")
