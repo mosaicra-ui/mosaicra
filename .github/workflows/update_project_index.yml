@@ -99,10 +99,14 @@ jobs:
 
           res = requests.get(url, headers=headers)
           if res.ok and res.json():
-              requests.patch(url, headers=headers, json=payload)
+              patch_res = requests.patch(url, headers=headers, json=payload)
+              print("PATCH status:", patch_res.status_code)
+              print("PATCH response:", patch_res.text)
           else:
               payload["created_at"] = iso_now()
-              requests.post(f"{SUPABASE_URL}/rest/v1/project_index", headers=headers, json=payload)
+              post_res = requests.post(f"{SUPABASE_URL}/rest/v1/project_index", headers=headers, json=payload)
+              print("POST status:", post_res.status_code)
+              print("POST response:", post_res.text)
           EOF
           python update_index.py
         env:
