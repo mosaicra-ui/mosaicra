@@ -1,0 +1,30 @@
+Project:
+  Id: 15f2ffec-48be-4155-9637-1b23058c199b
+  Name: new-project
+  Slug: new-project
+  Description: ""
+  Visibility: public
+  Category: button
+  Tags: []
+  ViewMode: dynamic
+  Interface: web
+  Language: html
+  Framework: none
+  Styling:
+    Type: css
+    Libraries: []
+  Licensing:
+    Type: MIT
+    Link: https://opensource.org/licenses/MIT
+  Community:
+    AllowRemix: true
+    AllowDiscussions: true
+Owner:
+  Username: herogautam
+  UserId: 4af577dd-dfec-4be7-a7ad-1a61627cd87d
+  Name: Hero Gautam
+  avatarUrl: https://avatars.githubusercontent.com/u/104679794?v=4
+Metadata:
+  CreatedAt: 2025-08-06T21:24:37.680Z
+  UpdatedAt: 2025-08-06T21:24:37.680Z
+  Version: 1.0.0
