@@ -68,7 +68,7 @@ jobs:
               exit(1)
 
           parts = Path(path).parts
-          username, project_name = parts[1], parts[2]
+          project_name = parts[2]
 
           project = config.get("Project", {})
           metadata = config.get("Metadata", {})
@@ -84,7 +84,6 @@ jobs:
               "visibility": project.get("Visibility", "public"),
               "version": metadata.get("Version"),
               "tags": project.get("Tags", []),
-              "owner_username": username,
               "owner_id": owner.get("UserId"),
               "updated_at": iso_now(),
               "remix_of_id": project.get("RemixOfId"),
