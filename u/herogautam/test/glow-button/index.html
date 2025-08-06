@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centered Button</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .button {
+      padding: 16px 32px;
+      font-size: 18px;
+      border: 2px solid yellowgreen;
+      background-color: yellow;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #00dddd;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <button class="button">Click Me</button>
+  </main>
+</body>
+</html>
