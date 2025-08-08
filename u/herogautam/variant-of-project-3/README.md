@@ -1,1 +1,1 @@
-# variant-of-project-3
+# project-1
